@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Activity Log — Weekly</title>
+  <link rel="stylesheet" href="style.css"> <!-- optional, keep CSS here or inline -->
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Study Activity Log — Weekly View</h1>
+        <div class="week-info" id="weekInfo">Week</div>
+      </div>
+      <div class="controls">
+        <button id="prevWeek" class="small">◀ Prev</button>
+        <button id="todayWeek" class="small ghost">This Week</button>
+        <button id="nextWeek" class="small">Next ▶</button>
+        <button id="exportCsv" class="small">Export CSV</button>
+        <button id="clearWeek" class="small ghost">Clear Week</button>
+      </div>
+    </header>
+
+    <div class="grid-wrap">
+      <table id="logTable">
+        <thead>
+          <tr>
+            <th class="hour-col">Hour</th>
+            <th id="day0"></th>
+            <th id="day1"></th>
+            <th id="day2"></th>
+            <th id="day3"></th>
+            <th id="day4"></th>
+            <th id="day5"></th>
+            <th id="day6"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <footer>
+      <div class="meta">Click any cell to edit. Data saved locally and synced to Google Sheets.</div>
+      <div class="meta">Tip: open this file in your browser and it works offline too.</div>
+    </footer>
+  </div>
+
+  <script src="log.js"></script>
+</body>
+</html>
+
