@@ -1,7 +1,7 @@
 // ---------------- Constants ----------------
 const HOURS = Array.from({length:24},(_,i)=>i);
 const STORAGE_KEY = 'studylog_v1';
-const SHEET_WEBAPP_URL = 'YOUR_WEBAPP_URL_HERE'; // replace with your Apps Script Web App URL
+const SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbyPIUfKECTixhsmwKAU2fXSe6rEI44LUgKPlXnxBYZ8khVRUUi8_Q1AfdIV2tB5ONzp/exec'; // replace with your Apps Script Web App URL
 
 // ---------------- Utilities ----------------
 function fmtDate(d){return d.toISOString().slice(0,10);}
